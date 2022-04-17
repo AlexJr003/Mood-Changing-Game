@@ -49,7 +49,7 @@ elementoButton.addEventListener('click', () =>{
         console.log('Shadow está feliz')
     }
 })
-console.log(addEventListener)
+
 
 
 // const div_id = document.querySelector('#text')

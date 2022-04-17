@@ -1,51 +1,124 @@
 const elementoTipo = document.querySelector('#tipo')
 const elementoImagem = document.querySelector('#imagem');
 let elementoButton = document.querySelector('#change');
+let humor = 0;
 
-elementoButton.addEventListener('click', () =>{
-    if (elementoButton.value === 'Disappointed'){
-        elementoImagem.src = "./assets/img/shadowProud.gif";
-        elementoTipo.innerText = 'Proud';
-        elementoButton.value = 'Proud';
+function mudaHumor(){
+
+
+    if (humor == 0){
+        elementoImagem.src = "./assets/img/shadowDisappointed.gif"
+        elementoTipo.innerText = "Sad";
+        console.log('Shadow is Sad')
+        humor++
+    } else if (humor == 1){
+        elementoImagem.src = "./assets/img/shadowHappy.gif"
+        elementoTipo.innerText = " Happy ";
+        console.log('Shadow is Happy')
+        humor = humor + 1
+    } else if (humor == 2){
+        elementoImagem.src = "./assets/img/shadowAngry.gif"
+        elementoTipo.innerText = " Angry ";
+        console.log('Shadow is Angry')
+        humor = humor + 1
+    }
+    else if (humor == 3){
+    elementoImagem.src = "./assets/img/shadowProud.gif"
+    elementoTipo.innerText = " Proud ";
+    console.log('Shadow is Proud')
+    humor = humor + 1  
+    }
+    else if (humor == 4){
+        elementoImagem.src = "./assets/img/shadowBored.gif"
+        elementoTipo.innerText = " Bored ";
+        console.log('Shadow is Bored')
+        humor = humor + 1  
+        }
+        else if (humor == 5){
+        elementoImagem.src = "./assets/img/shadowSuper.gif"
+            elementoTipo.innerText = "Super Shadow";
+            console.log('Shadow is Super')
+            humor = humor + 1  
+        }     
+        else if (humor == 6){
+        elementoImagem.src = "./assets/img/shadowBadAss2.gif"
+        elementoTipo.innerText = "Bad-Ass";
+        console.log('Shadow is Bas-Ass')
+        humor = 0 
+        }
+                         
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const elementoTipo = document.querySelector('#tipo')
+// const elementoImagem = document.querySelector('#imagem');
+// let elementoButton = document.querySelector('#change');
+
+// elementoButton.addEventListener('click', () =>{
+//     if (elementoButton.value === 'Disappointed'){
+//         elementoImagem.src = "./assets/img/shadowProud.gif";
+//         elementoTipo.innerText = 'Proud';
+//         elementoButton.value = 'Proud';
        
-    } else if (elementoButton.value === 'Proud'){
-        elementoImagem.src = './assets/img/shadowChallenged.gif';
-        elementoTipo.innerText = 'Challenged';
-        elementoButton.value = 'Challenged';
-    } else if (elementoButton.value === 'Challenged'){
-        elementoImagem.src = './assets/img/shadowBored.gif';
-        elementoTipo.innerText = 'Bored';
-        elementoButton.value = 'Bored';
-    }
-    else if (elementoButton.value === 'Bored'){
-    elementoImagem.src = './assets/img/shadowAngry.gif';
-    elementoTipo.innerText = 'Angry';
-    elementoButton.value = 'Angry';
-    }
-    else if (elementoButton.value === 'Angry'){
-    elementoImagem.src = "./assets/img/shadowHappy.gif";
-    elementoTipo.innerText = 'Happy';
-    elementoButton.value = 'Happy';
-    }
-    else if (elementoButton.value === 'Happy'){
-    elementoImagem.src = "./assets/img/shadowSuper.gif";
-    elementoTipo.innerText = 'Super Shadow';
-    elementoButton.value = 'Super Shadow';
+//     } else if (elementoButton.value === 'Proud'){
+//         elementoImagem.src = './assets/img/shadowChallenged.gif';
+//         elementoTipo.innerText = 'Challenged';
+//         elementoButton.value = 'Challenged';
+//     } else if (elementoButton.value === 'Challenged'){
+//         elementoImagem.src = './assets/img/shadowBored.gif';
+//         elementoTipo.innerText = 'Bored';
+//         elementoButton.value = 'Bored';
+//     }
+//     else if (elementoButton.value === 'Bored'){
+//     elementoImagem.src = './assets/img/shadowAngry.gif';
+//     elementoTipo.innerText = 'Angry';
+//     elementoButton.value = 'Angry';
+//     }
+//     else if (elementoButton.value === 'Angry'){
+//     elementoImagem.src = "./assets/img/shadowHappy.gif";
+//     elementoTipo.innerText = 'Happy';
+//     elementoButton.value = 'Happy';
+//     }
+//     else if (elementoButton.value === 'Happy'){
+//     elementoImagem.src = "./assets/img/shadowSuper.gif";
+//     elementoTipo.innerText = 'Super Shadow';
+//     elementoButton.value = 'Super Shadow';
    
-    }
-    else if (elementoButton.value === 'Super Shadow'){
-    elementoImagem.src = "./assets/img/shadowBadAss.gif";
-    elementoTipo.innerText = 'Bad-Ass';
-    elementoButton.value = 'Bad-Ass';
+//     }
+//     else if (elementoButton.value === 'Super Shadow'){
+//     elementoImagem.src = "./assets/img/shadowBadAss.gif";
+//     elementoTipo.innerText = 'Bad-Ass';
+//     elementoButton.value = 'Bad-Ass';
     
-    }
-    else {
-        elementoImagem.src = './assets/img/shadowDisappointed.gif';
-        elementoTipo.innerText = 'Disappointed';
-        elementoButton.value = 'Disappointed';
+//     }
+//     else {
+//         elementoImagem.src = './assets/img/shadowDisappointed.gif';
+//         elementoTipo.innerText = 'Disappointed';
+//         elementoButton.value = 'Disappointed';
        
-    }
-})
+//     }
+// })
 
 
 

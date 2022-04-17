@@ -16,7 +16,7 @@ header {
 
 main {
 
-    margin: 0 10rem black 0 10rem black;
+    
     background-color: black;
     border-color: black;
 
@@ -30,35 +30,34 @@ section#Intruction p{
 
 main p{
     display: flex;
-    margin: 0 10rem 0 10rem black;
-    padding: 1rem;
+    margin: 0 black 10rem 0 black 10rem black;
+    padding: 1.2rem;
     align-items: center;
     color: white;
     font-size: 1rem;
     justify-content: center;
-    
-
-}
+    color: white;
+   }
 
 
 #tituloDaPagina {
     display: flex;
     align-items: center;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     justify-content: center;
     background-color: black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(182, 24, 24, 0.786);
+    -webkit-text-fill-color: white;
+}
 
-}
-.texto {
-    color: white
-}
 
 header img {
     width: 100%;
 }
 
-main figure {
+section#imagens {
     align-items: center;
     width: 100%;
     display: flex;
@@ -73,14 +72,6 @@ align-items: center;
 padding: 3rem;
 }
 
-
-section#imagens div .img{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
 section#imagens form h3 {
     color:rgb(255, 255, 255);
     display: flex;
@@ -91,31 +82,34 @@ section#imagens form h3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    -webkit-text-stroke-width: 0.15rem;
+    -webkit-text-stroke-color: rgb(182, 26, 26);
         
 }
 
 
 
-section#imagens form button{
-    border: solid 2px rgba(255, 255, 255, 0.636);
+section#imagens input {
+    display: flex;
+    border: solid 3px rgba(255, 255, 255, 0.636);
     padding: 0.6rem;
     font-size: 1.5rem;
     font-weight: 500;
     justify-content: center;
     background-color: rgb(173, 16, 16);
-    width:50%;
     text-align: center;
     display: flex;
     margin: 0 auto;
     cursor: pointer;  
-    transition: all .2s ease-in-out; 
-    justify-content: space-evenly;
+    transition: all .3s ease-in-out; 
     align-items: center;
-}
+    }
 
-section#imagens form button:hover{
+section#imagens input:hover{
     background-color: rgb(0, 0, 0);
     color: rgb(173, 16, 16);
+    transform: scale(1.1);
+    
 }
 
 footer {
@@ -143,4 +137,13 @@ footer p {
     -webkit-text-stroke-color: rgb(182, 26, 26);
     -webkit-text-fill-color: white;
 }
+
+footer audio {
+    position: fixed;
+    top:0;
+    left:0;
+    width:13%;
+    -webkit-text-stroke-color: rgb(182, 26, 26);
+    -webkit-text-fill-color: rgb(182, 26, 26);
+        }
 

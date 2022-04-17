@@ -7,7 +7,7 @@ elementoButton.addEventListener('click', () =>{
         elementoImagem.src = "./assets/img/shadowProud.gif";
         elementoTipo.innerText = 'Proud';
         elementoButton.value = 'Proud';
-        console.log('Shadow está feliz')
+       
     } else if (elementoButton.value === 'Proud'){
         elementoImagem.src = './assets/img/shadowChallenged.gif';
         elementoTipo.innerText = 'Challenged';
@@ -16,37 +16,34 @@ elementoButton.addEventListener('click', () =>{
         elementoImagem.src = './assets/img/shadowBored.gif';
         elementoTipo.innerText = 'Bored';
         elementoButton.value = 'Bored';
-        console.log('Shadow está feliz')
     }
     else if (elementoButton.value === 'Bored'){
     elementoImagem.src = './assets/img/shadowAngry.gif';
     elementoTipo.innerText = 'Angry';
     elementoButton.value = 'Angry';
-    console.log('Shadow está feliz')
     }
     else if (elementoButton.value === 'Angry'){
     elementoImagem.src = "./assets/img/shadowHappy.gif";
     elementoTipo.innerText = 'Happy';
     elementoButton.value = 'Happy';
-    console.log('Shadow está feliz')
     }
     else if (elementoButton.value === 'Happy'){
     elementoImagem.src = "./assets/img/shadowSuper.gif";
     elementoTipo.innerText = 'Super Shadow';
     elementoButton.value = 'Super Shadow';
-    console.log('Shadow está feliz')
+   
     }
     else if (elementoButton.value === 'Super Shadow'){
     elementoImagem.src = "./assets/img/shadowBadAss.gif";
     elementoTipo.innerText = 'Bad-Ass';
     elementoButton.value = 'Bad-Ass';
-    console.log('Shadow está feliz')
+    
     }
     else {
         elementoImagem.src = './assets/img/shadowDisappointed.gif';
         elementoTipo.innerText = 'Disappointed';
         elementoButton.value = 'Disappointed';
-        console.log('Shadow está feliz')
+       
     }
 })
 
